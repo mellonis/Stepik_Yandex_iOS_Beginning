@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TriangleGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aOC-e3-7Wt" customClass="GameControlView" customModule="TriangleGame" customModuleProvider="target">
+                                <rect key="frame" x="20" y="52" width="374" height="71"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="06U-K7-a6C" customClass="GameFieldView" customModule="TriangleGame" customModuleProvider="target">
+                                <rect key="frame" x="20" y="131" width="374" height="694"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shapeSize">
+                                        <size key="value" width="80" height="80"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Последний счёт: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ni9-ak-1BY">
+                                <rect key="frame" x="132.5" y="833" width="149" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aOC-e3-7Wt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="49P-3O-hQm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aOC-e3-7Wt" secondAttribute="trailing" constant="20" id="6VZ-ei-LqK"/>
+                            <constraint firstItem="Ni9-ak-1BY" firstAttribute="top" secondItem="06U-K7-a6C" secondAttribute="bottom" constant="8" id="ISq-YJ-gdF"/>
+                            <constraint firstItem="aOC-e3-7Wt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="VaO-ee-QjO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ni9-ak-1BY" secondAttribute="bottom" constant="8" id="ff3-ym-GaS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="06U-K7-a6C" secondAttribute="trailing" constant="20" id="gca-gM-Hnn"/>
+                            <constraint firstItem="06U-K7-a6C" firstAttribute="top" secondItem="aOC-e3-7Wt" secondAttribute="bottom" constant="8" id="hJJ-IP-JCl"/>
+                            <constraint firstItem="Ni9-ak-1BY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kQ3-de-g51"/>
+                            <constraint firstItem="06U-K7-a6C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="suq-qx-ZjC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="gameControl" destination="aOC-e3-7Wt" id="kgZ-Te-oAF"/>
+                        <outlet property="gameFieldView" destination="06U-K7-a6C" id="ZAs-VM-GWd"/>
+                        <outlet property="scoreLabel" destination="Ni9-ak-1BY" id="k0v-Hb-1a8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="116.51785714285714"/>
+        </scene>
+    </scenes>
+</document>
