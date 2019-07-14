@@ -7,14 +7,20 @@
 //
 
 import UIKit
+import CocoaLumberjack
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var colorPickerView: ColorPickerView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        colorPickerView.colorPicked = { [weak self] in self?.colorPicked() }
     }
 
-
+    private func colorPicked() {
+        DDLogDebug("Color has been picked. It is \(colorPickerView.selectedColor)")
+    }
 }
 
