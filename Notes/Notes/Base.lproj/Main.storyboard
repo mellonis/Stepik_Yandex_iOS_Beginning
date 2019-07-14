@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,25 +15,39 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Notes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QrL-Wi-lna" customClass="ColorPickerView" customModule="Notes" customModuleProvider="target">
-                                <rect key="frame" x="20" y="44" width="374" height="818"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9Uv-bm-YDb">
+                                <rect key="frame" x="20" y="28" width="280" height="532"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8b1-xS-HCo" customClass="NoteEditingView" customModule="Notes" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="532"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="noteTitle" value="Note Title"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="noteBoby" value="Note Text"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7rC-Gj-nXi" customClass="ColorPickerView" customModule="Notes" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="538"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="QrL-Wi-lna" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="0ks-Yc-0DA"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QrL-Wi-lna" secondAttribute="trailing" constant="20" id="MFB-nb-0yi"/>
-                            <constraint firstItem="QrL-Wi-lna" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="suU-Wi-COy"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QrL-Wi-lna" secondAttribute="bottom" id="wNh-2u-fZl"/>
+                            <constraint firstAttribute="trailing" secondItem="9Uv-bm-YDb" secondAttribute="trailing" constant="20" id="3mX-tt-5wY"/>
+                            <constraint firstItem="9Uv-bm-YDb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="DXo-kd-HUL"/>
+                            <constraint firstAttribute="bottom" secondItem="9Uv-bm-YDb" secondAttribute="bottom" constant="8" id="FaV-zf-fDL"/>
+                            <constraint firstItem="9Uv-bm-YDb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="WHF-Of-cdC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="colorPickerView" destination="QrL-Wi-lna" id="f5l-C3-2hO"/>
+                        <outlet property="colorPickerView" destination="7rC-Gj-nXi" id="Lsk-3q-sb8"/>
+                        <outlet property="noteEditingView" destination="8b1-xS-HCo" id="wwT-GE-uQh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -13,6 +13,8 @@
 		4D0F213122DA753C006FA2BE /* NoteExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F212E22DA753C006FA2BE /* NoteExtensions.swift */; };
 		4D0F213322DAD56A006FA2BE /* ColorPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D0F213222DAD56A006FA2BE /* ColorPickerView.xib */; };
 		4D0F213522DAD585006FA2BE /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F213422DAD585006FA2BE /* ColorPickerView.swift */; };
+		4D0F213722DB463C006FA2BE /* NoteEditingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D0F213622DB463C006FA2BE /* NoteEditingView.xib */; };
+		4D0F213922DB465A006FA2BE /* NoteEditingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F213822DB4659006FA2BE /* NoteEditingView.swift */; };
 		4D6C0D9522DA68D300E06A6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6C0D9422DA68D300E06A6E /* AppDelegate.swift */; };
 		4D6C0D9722DA68D300E06A6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6C0D9622DA68D300E06A6E /* ViewController.swift */; };
 		4D6C0D9A22DA68D300E06A6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D6C0D9822DA68D300E06A6E /* Main.storyboard */; };
@@ -41,6 +43,8 @@
 		4D0F212E22DA753C006FA2BE /* NoteExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteExtensions.swift; sourceTree = "<group>"; };
 		4D0F213222DAD56A006FA2BE /* ColorPickerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorPickerView.xib; sourceTree = "<group>"; };
 		4D0F213422DAD585006FA2BE /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
+		4D0F213622DB463C006FA2BE /* NoteEditingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoteEditingView.xib; sourceTree = "<group>"; };
+		4D0F213822DB4659006FA2BE /* NoteEditingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteEditingView.swift; sourceTree = "<group>"; };
 		4D6C0D9122DA68D300E06A6E /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D6C0D9422DA68D300E06A6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D6C0D9622DA68D300E06A6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +127,8 @@
 				4D6C0DA022DA68D400E06A6E /* Info.plist */,
 				4D0F213222DAD56A006FA2BE /* ColorPickerView.xib */,
 				4D0F213422DAD585006FA2BE /* ColorPickerView.swift */,
+				4D0F213622DB463C006FA2BE /* NoteEditingView.xib */,
+				4D0F213822DB4659006FA2BE /* NoteEditingView.swift */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
@@ -245,6 +251,7 @@
 				4D6C0D9F22DA68D400E06A6E /* LaunchScreen.storyboard in Resources */,
 				4D6C0D9C22DA68D400E06A6E /* Assets.xcassets in Resources */,
 				4D6C0DB722DA6E7700E06A6E /* ConfigInfo.txt in Resources */,
+				4D0F213722DB463C006FA2BE /* NoteEditingView.xib in Resources */,
 				4D0F213322DAD56A006FA2BE /* ColorPickerView.xib in Resources */,
 				4D6C0D9A22DA68D300E06A6E /* Main.storyboard in Resources */,
 			);
@@ -312,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D6C0D9722DA68D300E06A6E /* ViewController.swift in Sources */,
+				4D0F213922DB465A006FA2BE /* NoteEditingView.swift in Sources */,
 				4D6C0D9522DA68D300E06A6E /* AppDelegate.swift in Sources */,
 				4D0F213522DAD585006FA2BE /* ColorPickerView.swift in Sources */,
 				4D0F213122DA753C006FA2BE /* NoteExtensions.swift in Sources */,

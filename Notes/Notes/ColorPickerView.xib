@@ -86,14 +86,14 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lJQ-fl-xWJ">
-                            <rect key="frame" x="0.0" y="112" width="403" height="366"/>
+                            <rect key="frame" x="0.0" y="112" width="403" height="288"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WsJ-lt-7iA">
-                                    <rect key="frame" x="26.5" y="8" width="350" height="350"/>
+                                    <rect key="frame" x="65.5" y="8" width="272" height="272"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" constant="350" id="uJw-wq-1rX"/>
-                                        <constraint firstAttribute="height" constant="350" id="z3S-6a-7D4"/>
+                                        <constraint firstAttribute="width" constant="272" id="uJw-wq-1rX"/>
+                                        <constraint firstAttribute="height" constant="272" id="z3S-6a-7D4"/>
                                     </constraints>
                                 </view>
                             </subviews>
@@ -105,7 +105,7 @@
                             </constraints>
                         </view>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8lz-nj-Hnz">
-                            <rect key="frame" x="0.0" y="483" width="403" height="50"/>
+                            <rect key="frame" x="0.0" y="405" width="403" height="50"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="jMW-6e-lYZ"/>
                             </constraints>
@@ -115,7 +115,7 @@
                             </connections>
                         </button>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hTF-iU-9ZD">
-                            <rect key="frame" x="0.0" y="538" width="403" height="275"/>
+                            <rect key="frame" x="0.0" y="460" width="403" height="353"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </view>
                     </subviews>
