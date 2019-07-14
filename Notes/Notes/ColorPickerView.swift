@@ -109,20 +109,16 @@ import CocoaLumberjack
         huePalette.layer.insertSublayer(gradientLayer2!, at: 1)
         
         if let lastPalletePoint = lastPalletePoint {
-            if huePalette.layer.bounds.contains(lastPalletePoint) {
-                let path = UIBezierPath(
-                    arcCenter: lastPalletePoint,
-                    radius: 15,
-                    startAngle: 0,
-                    endAngle: CGFloat.pi * 2,
-                    clockwise: true
-                )
-                
-                targetLayer!.path = path.cgPath
-                huePalette.layer.insertSublayer(targetLayer!, at: 2)
-                
-            }
+            let path = UIBezierPath(
+                arcCenter: lastPalletePoint,
+                radius: 15,
+                startAngle: 0,
+                endAngle: CGFloat.pi * 2,
+                clockwise: true
+            )
             
+            targetLayer!.path = path.cgPath
+            huePalette.layer.insertSublayer(targetLayer!, at: 2)
             self.lastPalletePoint = nil
         }
     }
@@ -131,11 +127,13 @@ import CocoaLumberjack
         guard touch != nil else { return }
         
         if let location = touch?.location(in: huePalette) {
-            lastPalletePoint = location
-            DDLogDebug("Touch location is (\(location.x), \(location.y))")
-            selectedColor = huePalette.colorOfPoint(point: location)
-            DDLogDebug("Color is \(selectedColor)")
-            updateUI()
+            if huePalette.layer.bounds.contains(location) {
+                lastPalletePoint = location
+                DDLogDebug("Touch location is (\(location.x), \(location.y))")
+                selectedColor = huePalette.colorOfPoint(point: location)
+                DDLogDebug("Color is \(selectedColor)")
+                updateUI()
+            }
         }
     }
     
