@@ -26,6 +26,8 @@ import CocoaLumberjack
     var colorPicked: (() -> Void)?
     private var gradientLayer: CAGradientLayer?
     private var gradientLayer2: CAGradientLayer?
+    private var targetLayer: CAShapeLayer?
+    private var lastPalletePoint: CGPoint?
     
     @IBInspectable var selectedColor: UIColor = .green {
         didSet {
@@ -73,6 +75,15 @@ import CocoaLumberjack
             gradientLayer2 = CAGradientLayer()
         }
         
+        if let targetLayer = targetLayer {
+            targetLayer.removeFromSuperlayer()
+        } else {
+            targetLayer = CAShapeLayer()
+            targetLayer!.fillColor = UIColor.clear.cgColor
+            targetLayer!.strokeColor = UIColor.black.cgColor
+            targetLayer!.lineWidth = 1
+        }
+        
         gradientLayer!.frame = huePalette.bounds
         gradientLayer2!.frame = huePalette.bounds
         gradientLayer!.transform = CATransform3DMakeRotation(CGFloat.pi / 2, 0, 0, 1)
@@ -96,18 +107,34 @@ import CocoaLumberjack
         ]
         huePalette.layer.insertSublayer(gradientLayer!, at: 0)
         huePalette.layer.insertSublayer(gradientLayer2!, at: 1)
+        
+        if let lastPalletePoint = lastPalletePoint {
+            if huePalette.layer.bounds.contains(lastPalletePoint) {
+                let path = UIBezierPath(
+                    arcCenter: lastPalletePoint,
+                    radius: 15,
+                    startAngle: 0,
+                    endAngle: CGFloat.pi * 2,
+                    clockwise: true
+                )
+                
+                targetLayer!.path = path.cgPath
+                huePalette.layer.insertSublayer(targetLayer!, at: 2)
+                
+            }
+            
+            self.lastPalletePoint = nil
+        }
     }
     
     private func pickColorFromPoint(touch: UITouch?) {
         guard touch != nil else { return }
         
         if let location = touch?.location(in: huePalette) {
+            lastPalletePoint = location
             DDLogDebug("Touch location is (\(location.x), \(location.y))")
-            
             selectedColor = huePalette.colorOfPoint(point: location)
-            
             DDLogDebug("Color is \(selectedColor)")
-            
             updateUI()
         }
     }
