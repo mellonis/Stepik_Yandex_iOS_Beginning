@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  StartViewController.swift
 //  EditTitleViewController
 //
 //  Created by Ruslan Gilmullin on 21/07/2019.
@@ -8,20 +8,22 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class StartViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBAction func changeTitleButtonClicked(_ sender: UIButton) {
         let editTitleViewController = EditTitleViewController(model: model)
         
-        present(editTitleViewController, animated: true, completion: nil);
+        navigationController?.pushViewController(editTitleViewController, animated: true)
     }
     
-    private let model = Model(title: "Првиет!")
+    private let model = Model(title: "Привет!")
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Экран 1"
     }
-
+    
     override func viewWillAppear(_ animated: Bool) {
         titleLabel.text = model.title
     }

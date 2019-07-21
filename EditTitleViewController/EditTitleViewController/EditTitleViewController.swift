@@ -10,10 +10,6 @@ import UIKit
 
 class EditTitleViewController: UIViewController {
     @IBOutlet weak var titleTextField: UITextField!
-    @IBAction func saveButtonClicked(_ sender: UIButton) {
-        model.title = titleTextField.text ?? ""
-        dismiss(animated: true, completion: nil)
-    }
     private let model: Model
     
     init(model: Model) {
@@ -27,23 +23,27 @@ class EditTitleViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        title = "Экран 2"
+        
+        let leftButton = UIBarButtonItem(title: "Сохранить", style: .plain, target: self, action: #selector(saveTitle))
+        let rightButton = UIBarButtonItem(title: "Отменить", style: .plain, target: self, action: #selector(discardChangesAndPop))
+        
+        rightButton.setTitleTextAttributes([.foregroundColor: UIColor.red], for: .normal)
+        
+        navigationItem.leftBarButtonItem = leftButton
+        navigationItem.rightBarButtonItem = rightButton
     }
     
     override func viewWillAppear(_ animated: Bool) {
         titleTextField.text = model.title
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @objc private func saveTitle() {
+        model.title = titleTextField.text ?? ""
+        navigationController?.popViewController(animated: true)
     }
-    */
-
+    
+    @objc private func discardChangesAndPop() {
+        navigationController?.popViewController(animated: true)
+    }
 }

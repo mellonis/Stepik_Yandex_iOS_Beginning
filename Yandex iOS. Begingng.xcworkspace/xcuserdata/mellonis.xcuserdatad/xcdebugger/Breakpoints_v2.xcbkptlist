@@ -106,7 +106,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EditTitleViewController/EditTitleViewController/ViewController.swift"
-            timestampString = "585392855.2054729"
+            timestampString = "585393359.333714"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "10"
@@ -190,6 +190,70 @@
                   offsetFromSymbolStart = "16">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EditTitleViewController/EditTitleViewController/StartViewController.swift"
+            timestampString = "585396247.202829"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "StartViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EditTitleViewController.StartViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; EditTitleViewController.StartViewController"
+                  moduleName = "EditTitleViewController"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mellonis/Developer/Stepik/Yandex%20iOS/EditTitleViewController/EditTitleViewController/StartViewController.swift"
+                  timestampString = "585393726.128968"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "284">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EditTitleViewController.StartViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;EditTitleViewController.StartViewController&gt;"
+                  moduleName = "EditTitleViewController"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mellonis/Developer/Stepik/Yandex%20iOS/EditTitleViewController/EditTitleViewController/StartViewController.swift"
+                  timestampString = "585393726.136036"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "189">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EditTitleViewController/EditTitleViewController/StartViewController.swift"
+            timestampString = "585396247.203078"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "StartViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
