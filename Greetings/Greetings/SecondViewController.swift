@@ -10,14 +10,12 @@ import UIKit
 
 class SecondViewController: UIViewController {
     @IBOutlet weak var greetingLabel: UILabel!
-    
-    var model: Model?
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        greetingLabel.text = "Hello, \(model?.name ?? "")"
+        greetingLabel.text = "Hello, \(Storage.person.name)"
     }
 }

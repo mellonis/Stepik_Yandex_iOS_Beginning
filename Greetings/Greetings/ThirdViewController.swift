@@ -10,8 +10,6 @@ import UIKit
 
 class ThirdViewController: UIViewController {
     @IBOutlet weak var nameTextField: UITextField!
-    
-    var model: Model?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,13 +17,13 @@ class ThirdViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        nameTextField.text = model?.name
+        nameTextField.text = Storage.person.name
     }
     
     @objc private func updateNameAndShowGreeting() {
         if let name = nameTextField.text {
             if name.count > 0 {
-                model?.name = name
+                Storage.person.name = name
                 tabBarController?.selectedIndex = 0
             }
         }
