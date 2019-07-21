@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:LoginUIViewController/LoginUIViewController.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:TriangleGame/TriangleGame.xcodeproj">
    </FileRef>
    <FileRef
