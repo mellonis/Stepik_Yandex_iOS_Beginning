@@ -90,73 +90,104 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Notes/Notes/NoteEditingView.swift"
-            timestampString = "584817202.707823"
+            timestampString = "585391335.681694"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "234"
             endingLineNumber = "234"
             landmarkName = "updateUI()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EditTitleViewController/EditTitleViewController/ViewController.swift"
+            timestampString = "585392855.2054729"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "unknown"
+            landmarkType = "0">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Notes.NoteEditingView.(updateUI in _1062ABE36AE247497F0B5317EAE37C87)() -&gt; ()"
-                  moduleName = "Notes"
+                  symbolName = "EditTitleViewController.ViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; EditTitleViewController.ViewController"
+                  moduleName = "EditTitleViewController"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mellonis/Developer/Stepik/Yandex%20iOS/Notes/Notes/NoteEditingView.swift"
-                  timestampString = "584812784.14026"
+                  urlString = "file:///Users/mellonis/Developer/Stepik/Yandex%20iOS/EditTitleViewController/EditTitleViewController/ViewController.swift"
+                  timestampString = "585391761.290781"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "176"
-                  endingLineNumber = "176"
-                  offsetFromSymbolStart = "4088">
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Notes.NoteEditingView.(updateUI in _1062ABE36AE247497F0B5317EAE37C87)() -&gt; ()"
-                  moduleName = "Notes"
+                  symbolName = "EditTitleViewController.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; EditTitleViewController.ViewController"
+                  moduleName = "EditTitleViewController"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mellonis/Developer/Stepik/Yandex%20iOS/Notes/Notes/NoteEditingView.swift"
-                  timestampString = "584812784.145507"
+                  urlString = "file:///Users/mellonis/Developer/Stepik/Yandex%20iOS/EditTitleViewController/EditTitleViewController/ViewController.swift"
+                  timestampString = "585391761.3005019"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "176"
-                  endingLineNumber = "176"
-                  offsetFromSymbolStart = "4110">
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "361">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Notes.NoteEditingView.(updateUI in _1062ABE36AE247497F0B5317EAE37C87)() -&gt; ()"
-                  moduleName = "Notes"
+                  symbolName = "EditTitleViewController.ViewController.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;EditTitleViewController.ViewController&gt;"
+                  moduleName = "EditTitleViewController"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mellonis/Developer/Stepik/Yandex%20iOS/Notes/Notes/NoteEditingView.swift"
-                  timestampString = "584812784.147016"
+                  urlString = "file:///Users/mellonis/Developer/Stepik/Yandex%20iOS/EditTitleViewController/EditTitleViewController/ViewController.swift"
+                  timestampString = "585391761.302529"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "176"
-                  endingLineNumber = "176"
-                  offsetFromSymbolStart = "4748">
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Notes.NoteEditingView.(updateUI in _1062ABE36AE247497F0B5317EAE37C87)() -&gt; ()"
-                  moduleName = "Notes"
+                  symbolName = "EditTitleViewController.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;EditTitleViewController.ViewController&gt;"
+                  moduleName = "EditTitleViewController"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mellonis/Developer/Stepik/Yandex%20iOS/Notes/Notes/NoteEditingView.swift"
-                  timestampString = "584812784.149865"
+                  urlString = "file:///Users/mellonis/Developer/Stepik/Yandex%20iOS/EditTitleViewController/EditTitleViewController/ViewController.swift"
+                  timestampString = "585391761.3040839"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "176"
-                  endingLineNumber = "176"
-                  offsetFromSymbolStart = "5362">
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "201">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EditTitleViewController.ViewController.__deallocating_deinit"
+                  moduleName = "EditTitleViewController"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mellonis/Developer/Stepik/Yandex%20iOS/EditTitleViewController/EditTitleViewController/ViewController.swift"
+                  timestampString = "585391761.305441"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
                </Location>
             </Locations>
          </BreakpointContent>
