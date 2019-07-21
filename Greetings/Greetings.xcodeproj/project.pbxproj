@@ -16,6 +16,7 @@
 		4D0698A122E49828009829A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D0698A022E49828009829A7 /* Main.storyboard */; };
 		4D0698A322E49A0F009829A7 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0698A222E49A0F009829A7 /* Person.swift */; };
 		4D0698A622E49EF7009829A7 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0698A522E49EF7009829A7 /* Storage.swift */; };
+		4D0698A822E4A353009829A7 /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0698A722E4A353009829A7 /* FifthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		4D0698A022E49828009829A7 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		4D0698A222E49A0F009829A7 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		4D0698A522E49EF7009829A7 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		4D0698A722E4A353009829A7 /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				4D06989422E4882D009829A7 /* FirstViewController.swift */,
 				4D06989822E4883E009829A7 /* SecondViewController.swift */,
 				4D06989C22E48850009829A7 /* ThirdViewController.swift */,
+				4D0698A722E4A353009829A7 /* FifthViewController.swift */,
 			);
 			path = Greetings;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 				4D06989E22E48850009829A7 /* ThirdViewController.swift in Sources */,
 				4D06989622E4882D009829A7 /* FirstViewController.swift in Sources */,
 				4D0698A622E49EF7009829A7 /* Storage.swift in Sources */,
+				4D0698A822E4A353009829A7 /* FifthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

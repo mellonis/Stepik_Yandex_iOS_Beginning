@@ -92,14 +92,53 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yVc-uD-4eg"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Edit" selectedImage="edit-tap-bar-item-icon" id="3nC-Mv-ex2"/>
+                    <tabBarItem key="tabBarItem" title="Edit" image="edit-tap-bar-item-icon" id="3nC-Mv-ex2"/>
                     <connections>
                         <outlet property="nameTextField" destination="9Lu-hQ-2dh" id="tsf-aQ-QyM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u0i-oq-xVf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="393" y="147"/>
+            <point key="canvasLocation" x="1114" y="-502"/>
+        </scene>
+        <!--Gallery-->
+        <scene sceneID="lgq-eI-btF">
+            <objects>
+                <viewController id="eqz-ja-mzZ" customClass="FifthViewController" customModule="Greetings" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K2p-Nc-arW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sxi-4m-HNm">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="xdu-WK-NbS">
+                                <rect key="frame" x="187.5" y="726" width="39" height="37"/>
+                                <connections>
+                                    <action selector="pageControlValueChanged:" destination="eqz-ja-mzZ" eventType="valueChanged" id="tp1-Vm-fiR"/>
+                                </connections>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Sxi-4m-HNm" firstAttribute="leading" secondItem="dTz-wq-CGE" secondAttribute="leading" id="G0y-lq-R44"/>
+                            <constraint firstItem="dTz-wq-CGE" firstAttribute="bottom" secondItem="Sxi-4m-HNm" secondAttribute="bottom" id="Nkk-BF-8hZ"/>
+                            <constraint firstItem="xdu-WK-NbS" firstAttribute="centerX" secondItem="K2p-Nc-arW" secondAttribute="centerX" id="XdJ-JH-sPG"/>
+                            <constraint firstItem="dTz-wq-CGE" firstAttribute="trailing" secondItem="Sxi-4m-HNm" secondAttribute="trailing" id="b1c-q2-n5w"/>
+                            <constraint firstItem="Sxi-4m-HNm" firstAttribute="top" secondItem="dTz-wq-CGE" secondAttribute="top" id="jfJ-5Q-uLL"/>
+                            <constraint firstItem="dTz-wq-CGE" firstAttribute="bottom" secondItem="xdu-WK-NbS" secondAttribute="bottom" constant="50" id="uVd-v2-EZf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dTz-wq-CGE"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Gallery" image="images-tap-bar-item-icon" id="wuE-ho-t8g"/>
+                    <connections>
+                        <outlet property="pageControl" destination="xdu-WK-NbS" id="omS-sG-Fsb"/>
+                        <outlet property="scrollView" destination="Sxi-4m-HNm" id="eRH-8m-oO2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UD3-Ed-clm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1842" y="-502"/>
         </scene>
         <!--Greeting-->
         <scene sceneID="oAx-uR-UyK">
@@ -123,7 +162,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dl6-ZU-VGA"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Greeting" selectedImage="greeting-tap-bar-item-icon" id="5Qz-HW-Cs6"/>
+                    <tabBarItem key="tabBarItem" title="Greeting" image="greeting-tap-bar-item-icon" id="5Qz-HW-Cs6"/>
                     <connections>
                         <outlet property="greetingLabel" destination="wUh-8x-Ttt" id="AYM-A6-7im"/>
                     </connections>
@@ -144,6 +183,7 @@
                     <connections>
                         <segue destination="ycX-Tf-lSG" kind="relationship" relationship="viewControllers" id="Hd4-Jc-Mni"/>
                         <segue destination="F4t-LJ-U35" kind="relationship" relationship="viewControllers" id="DIj-mR-ro8"/>
+                        <segue destination="eqz-ja-mzZ" kind="relationship" relationship="viewControllers" id="i0U-Nc-at1"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kNI-IR-XEz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -154,5 +194,6 @@
     <resources>
         <image name="edit-tap-bar-item-icon" width="30" height="30"/>
         <image name="greeting-tap-bar-item-icon" width="30" height="30"/>
+        <image name="images-tap-bar-item-icon" width="30" height="30"/>
     </resources>
 </document>
