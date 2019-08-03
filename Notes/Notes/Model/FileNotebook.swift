@@ -1,27 +1,21 @@
 import Foundation
 
 class FileNotebook {
-    private var privateNotes: [Note]
-
-    var notes : [Note] { return privateNotes }
-
-    public init() {
-        privateNotes = []
-    }
+    private(set) var notes = [Note]()
 
     func add(_ note: Note) {
-        let index = privateNotes.firstIndex { $0.uid == note.uid }
-
-        if index == nil {
-            privateNotes.append(note)
+        if let index = notes.firstIndex(where: { $0.uid == note.uid }) {
+            notes[index] = note
+        } else {
+            notes.append(note)
         }
     }
 
     func remove(with uid: String) {
-        let index = privateNotes.firstIndex { $0.uid == uid }
+        let index = notes.firstIndex { $0.uid == uid }
 
         if let index = index {
-            privateNotes.remove(at: index)
+            notes.remove(at: index)
         }
     }
 
@@ -34,7 +28,7 @@ class FileNotebook {
                 create: true
             )
             let fileUrl = directoryUrl.appendingPathComponent(file)
-            let jsx: [[String: Any]] = privateNotes.map { $0.json }
+            let jsx: [[String: Any]] = notes.map { $0.json }
             let jsdata = try JSONSerialization.data(withJSONObject: jsx, options: [])
 
             try jsdata.write(to: fileUrl)
@@ -55,7 +49,7 @@ class FileNotebook {
             let jsdata = try Data(contentsOf: fileUrl)
             let parsedJson = try JSONSerialization.jsonObject(with: jsdata, options: []) as! [[String: Any]]
 
-            privateNotes = parsedJson.compactMap { Note.parse(json: $0) }
+            notes = parsedJson.compactMap { Note.parse(json: $0) }
         } catch {
             print(error)
         }

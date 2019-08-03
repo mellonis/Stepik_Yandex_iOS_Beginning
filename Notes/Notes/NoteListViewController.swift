@@ -34,8 +34,7 @@ class NoteListViewController: UIViewController {
             if Storage.noteUid != nil {
                 Storage.noteUid = nil
                 tableView.beginUpdates()
-                tableView.deleteRows(at: [IndexPath(row: Storage.noteIx!, section: 0)], with: .automatic)
-                tableView.insertRows(at: [IndexPath(row: Storage.noteBook.notes.count - 1, section: 0)], with: .automatic)
+                tableView.reloadRows(at: [IndexPath(row: Storage.noteIx!, section: 0)], with: .automatic)
                 tableView.endUpdates()
             } else {
                 tableView.beginUpdates()

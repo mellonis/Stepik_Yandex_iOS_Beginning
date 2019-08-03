@@ -198,17 +198,15 @@ class NoteViewController: UIViewController {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
+        var note: Note
+        
         if let noteUid = Storage.noteUid {
-            let note = Note(uid: noteUid, title: noteTitle, content: noteBody, color: noteTag, importance: .usual, selfDestructDate: noteDestroyDate)
-            
-            Storage.noteBook.remove(with: noteUid)
-            Storage.noteBook.add(note)
+            note = Note(uid: noteUid, title: noteTitle, content: noteBody, color: noteTag, importance: .usual, selfDestructDate: noteDestroyDate)
         } else {
-            let note = Note(title: noteTitle, content: noteBody, color: noteTag, importance: .usual, selfDestructDate: noteDestroyDate)
-            
-            Storage.noteBook.add(note)
+            note = Note(title: noteTitle, content: noteBody, color: noteTag, importance: .usual, selfDestructDate: noteDestroyDate)
         }
         
+        Storage.noteBook.add(note)
         Storage.updateTable = true
     }
     
